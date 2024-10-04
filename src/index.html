@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>cortes profile</title>
+</head>
+<body>
+   <div class="loading"></div>
+    <div class="main"> 
+       
+        <div  class="mainImg"></div>
+        <div  class="mainImg2"><img id="triger" src="./xenon.jpg"  onclick="toggleVisibility()" alt=""></div>
+     
+        <div   class="dRight">
+            <div id="r1" class="r1">
+                <h1 class="name">Cortes Tejada</h1>
+               
+             <div class="profileText">
+                <p>Here’s a shorter version:
+
+                    ---
+                    
+                    I have 2 years of experience with JavaScript, specializing in web development and building dynamic applications. I'm also immersed in cybersecurity, focusing on creating secure solutions. 
+                    
+                    My passion for technology extends beyond coding, as I'm always learning new ways to enhance the functionality and security of web applications. Currently, I'm studying cybersecurity to strengthen my skills while applying them to my development projects. I'm constantly looking for new challenges to grow!</p>
+              
+             </div>    
+   
+            </div>
+            <div id="r2" class="r2">
+                <div class="r2-h3"><h3>working with</h3></div>
+                <div class="r2-container">
+                  <div class="r2Box-container">
+                    <div class="r2Box"><img src="./li.png" alt=""></div>
+                    <div class="r2Box"><img src="./atom.png" alt=""></div>
+                    <div class="r2Box"><img src="./css-3.png" alt=""></div>
+                    <div class="r2Box"><img src="./c-logo.png" alt=""></div>
+                  </div>
+                  <div class="r2Box-container">
+                    <div class="r2Box"><img src="./java-script.png" alt=""></div>
+                    <div class="r2Box"><img src="./firebase.png" alt=""></div>
+                    <div class="r2Box"><img src="./python.png" alt=""></div>
+                    <div class="r2Box"><img src="./mysql.png" alt=""></div>
+                  </div>
+                </div>
+            </div>
+            <div id="r3" class="r3">
+                <div class="r3-mailBox">
+                    <h3 class="emailText">cortesseven2003@gmail.com</h3>
+                </div>
+                <div class="r3-box"><a  href="https://www.linkedin.com/in/cortes-tejada-a54603307?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./business.png" alt=""></a></div>
+                <div class="r3-box"><img src="./social-media.png" alt=""></div>
+                <div class="r3-box"><a href="https://github.com/Sevencito07"><img src="./github-sign.png" alt=""> </a> </div>
+                </div>
+        </div> 
+         <div  class="dLeft"> 
+            <div id="l1" class="l1">
+                <div class="cl childLeft1">
+                    <div class="cl-preferencesh2"><h2> Goals this 2025</h2></div>
+                    <div class="cl-preferences">
+                        <h4>#learn new programming languages </h4>
+                    </div>
+                    <div class="cl-preferences">
+                        <h4>#Keep constant on GitHub</h4>
+                    </div>
+                    <div class="cl-preferences">
+                        <h4>#Get my first cyber security certificate </h4>
+                    </div>
+                </div>
+                <div class="cl childLeft2">
+                    <div class="cl-preferencesh2"> <h2>some preferences</h2></div>
+                    <div class="cl-preferences">
+                        <img src="./li.png " alt="">
+                        <img src="./right-arrow.png" alt="">
+                        <img src="./windows.png" alt="">
+                        <img src="./mac-os-logo.png" alt="">
+                    </div>
+                    <div class="cl-preferences">
+                        <img src="./react.png" alt="">
+                        <img src="right-arrow.png" alt="">
+                        <img src="./angular.png" alt="">
+                        <img src="" alt="">
+                    </div>
+                    <div class="cl-preferences">
+                        <img src="./firefox.png" alt="">
+                        <img src="./right-arrow.png" alt="">
+                        <img src="./chrome.png" alt="">
+                        <img src="./microsoft.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="l2" class="l2">
+                <div class="l2Container">
+                   <div class="row-l2Container">
+                   <div class="projectsContainer"> 
+                    <div class="l2-checkProject"> 
+                        
+                        <a href="https://sevencito07.github.io/ben10-aliens/"><img src="./top-left.png" alt=""></a>
+                        <a href="https://github.com/Sevencito07/ben10-aliens"> <img src="./github-sign.png" alt=""></a>
+                       
+                    </div>
+                   </div>
+                   <div class="projectsContainer">
+                    <div class="l2-checkProject"> 
+                        <img src="./top-left.png" alt="">
+                        <a href="https://github.com/Sevencito07/railway-mysql-express">    <img src="./github-sign.png" alt=""></a>
+                    
+                    </div>
+                   </div>
+                   </div>
+                   <div class="row-l2Container">
+                    <div class="projectsContainer">
+                        <div class="l2-checkProject"> 
+                            <img src="./top-left.png" alt="">
+                            <img src="./github-sign.png" alt="">
+                        </div>
+                    </div>
+                    <div class="projectsContainer">
+                        <div class="l2-checkProject"> 
+                            <img src="./top-left.png" alt="">
+                            <img src="./github-sign.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+<script>
+    function stars(){
+        let e = document.createElement('div');
+        e.setAttribute('class','star');
+        document.body.appendChild(e);
+        e.style.left = Math.random() * + innerWidth + 'px';
+
+        let size = Math.random() * 12;
+        let duration = Math.random() * 3;
+
+        e.style.fontSize = 12 + size+'px';
+        e.style.animationDuration = 2 + duration+'s';
+
+        setTimeout(function(){
+            document.body.removeChild(e);
+        },5000)
+    }
+
+    setInterval(function(){
+        stars()
+    },100)
+
+/////////////////// dsplay none x block
+function toggleVisibility() {
+    
+            let right = document.querySelector('.dRight');
+            let left = document.querySelector('.dLeft');
+
+            if (right.style.visibility === "visible") {
+                right.classList.remove('show');
+                left.classList.remove('show');
+            } else {
+                right.classList.add('show');
+                left.classList.add('show');
+            }
+        }
+
+</script>
+</body>
+</html>
